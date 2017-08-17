@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Themed_Example' do
+  pod 'Themed', :path => '../'
+
+  target 'Themed_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
