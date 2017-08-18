@@ -28,7 +28,7 @@ public class Theme {
 
     public func addStyle(_ key: String, action: @escaping ((UIView) -> Void)) {
         styles[key] = SimpleStyle(key, style: action)
-        NotificationCenter.default.post(name: NSNotification.Name("BALTHEME_STYLE_CHANGED"), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name("THEMED_STYLE_CHANGED_\(key)"), object: nil)
     }
 
     public func getStyle(_ key: String) -> Style? {

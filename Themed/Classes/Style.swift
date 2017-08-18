@@ -24,7 +24,7 @@ open class Style {
 
 public class SimpleStyle : Style {
     
-    private var styleBlock : ((UIView) -> Void)
+    public var styleBlock : ((UIView) -> Void)
     
     init(_ name: String, style: @escaping ((UIView) -> Void)) {
         styleBlock = style

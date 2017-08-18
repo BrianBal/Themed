@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DE2EE1A1F475860005C6D7E /* StyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2EE191F475860005C6D7E /* StyleTests.swift */; };
+		2DE2EE1C1F475FC5005C6D7E /* StyleHolderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2EE1B1F475FC5005C6D7E /* StyleHolderTests.swift */; };
+		2DE2EE1E1F47644B005C6D7E /* ThemeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2EE1D1F47644B005C6D7E /* ThemeTests.swift */; };
+		2DE2EE201F476881005C6D7E /* ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE2EE1F1F476881005C6D7E /* ViewTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B657F83745469E39ABA4E5D2 /* Pods_Themed_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605666C77CA53E95FB4FFCBA /* Pods_Themed_Tests.framework */; };
 		D74197043069A09D61336211 /* Pods_Themed_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04482451330D8CAAF2539E7 /* Pods_Themed_Example.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DE2EE191F475860005C6D7E /* StyleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleTests.swift; sourceTree = "<group>"; };
+		2DE2EE1B1F475FC5005C6D7E /* StyleHolderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleHolderTests.swift; sourceTree = "<group>"; };
+		2DE2EE1D1F47644B005C6D7E /* ThemeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTests.swift; sourceTree = "<group>"; };
+		2DE2EE1F1F476881005C6D7E /* ViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTests.swift; sourceTree = "<group>"; };
 		41F0660BBA910B2F08D53E34 /* Pods-Themed_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Themed_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Themed_Tests/Pods-Themed_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		605666C77CA53E95FB4FFCBA /* Pods_Themed_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Themed_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* Themed_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Themed_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +44,6 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Themed_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Themed_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6810FBCBDDAD8C4D7F50C339 /* Pods-Themed_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Themed_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Themed_Example/Pods-Themed_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A04482451330D8CAAF2539E7 /* Pods_Themed_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Themed_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A046AA591B7281288648D5A5 /* Pods-Themed_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Themed_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Themed_Tests/Pods-Themed_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +129,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				2DE2EE191F475860005C6D7E /* StyleTests.swift */,
+				2DE2EE1B1F475FC5005C6D7E /* StyleHolderTests.swift */,
+				2DE2EE1D1F47644B005C6D7E /* ThemeTests.swift */,
+				2DE2EE1F1F476881005C6D7E /* ViewTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -212,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RB5EV68CB8;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RB5EV68CB8;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -375,7 +386,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				2DE2EE201F476881005C6D7E /* ViewTests.swift in Sources */,
+				2DE2EE1A1F475860005C6D7E /* StyleTests.swift in Sources */,
+				2DE2EE1C1F475FC5005C6D7E /* StyleHolderTests.swift in Sources */,
+				2DE2EE1E1F47644B005C6D7E /* ThemeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +507,7 @@
 			baseConfigurationReference = C9B8DF0BB1A8B6E631F3DE0D /* Pods-Themed_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RB5EV68CB8;
 				INFOPLIST_FILE = Themed/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -508,6 +523,7 @@
 			baseConfigurationReference = 6810FBCBDDAD8C4D7F50C339 /* Pods-Themed_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RB5EV68CB8;
 				INFOPLIST_FILE = Themed/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,9 +538,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41F0660BBA910B2F08D53E34 /* Pods-Themed_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RB5EV68CB8;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -535,6 +552,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Themed_Example.app/Themed_Example";
 			};
 			name = Debug;
 		};
@@ -542,15 +560,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A046AA591B7281288648D5A5 /* Pods-Themed_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RB5EV68CB8;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Themed_Example.app/Themed_Example";
 			};
 			name = Release;
 		};

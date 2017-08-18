@@ -11,7 +11,7 @@ import ObjectiveC
 
 public extension UIView {
 
-    private struct AssociatedKeys {
+    public struct AssociatedKeys {
         static var styleHolder = "themed_styleholder"
     }
 
