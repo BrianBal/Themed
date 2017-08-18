@@ -1,0 +1,22 @@
+{
+  "name": "Themed",
+  "version": "0.1.0",
+  "summary": "A light weight, simple and flexible theme engine for iOS written in Swift.",
+  "description": "Themed is a theme engine for iOS.\n+ Write styles in Swift\n+ Keep styles DRY\n+ Supports runtime style changes",
+  "homepage": "https://github.com/BrianBal/Themed",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Brian Bal": "briantbal@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/BrianBal/Themed.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Themed/Classes/**/*"
+}

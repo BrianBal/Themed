@@ -1,11 +1,10 @@
 use_frameworks!
+platform :ios, '10.0'
 
 target 'Themed_Example' do
   pod 'Themed', :path => '../'
 
   target 'Themed_Tests' do
     inherit! :search_paths
-
-    
   end
 end

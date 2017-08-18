@@ -1,0 +1,16 @@
+PODS:
+  - Themed (0.1.0)
+
+DEPENDENCIES:
+  - Themed (from `../`)
+
+EXTERNAL SOURCES:
+  Themed:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Themed: d128874a330f40fbc113e32c3ea18282f6557631
+
+PODFILE CHECKSUM: bd1992f3a25842c24236a649aa17f26c66880bca
+
+COCOAPODS: 1.3.1

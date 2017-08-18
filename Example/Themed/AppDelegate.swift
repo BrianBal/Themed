@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Themed
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setupTheme()
+        
+        // setup appearance defaults with styles (wont auto update styled views)
+        // UINavigationBar.appearance().styles = ["navbar"]
+        
+        let nav = UINavigationController(rootViewController: ViewController())
+        nav.navigationBar.styles = ["navbar"]
+        
+        window = UIWindow()
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -41,6 +54,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func setupTheme() {
+        
+        Theme.add("navbar") { (view) in
+            if let navbar = view as? UINavigationBar {
+                navbar.barTintColor = .blue
+                navbar.tintColor = .white
+                navbar.titleTextAttributes = [
+                    NSFontAttributeName: UIFont.preferredFont(forTextStyle: UIFontTextStyle.title2),
+                    NSForegroundColorAttributeName: UIColor.white
+                ]
+            }
+        }
+        
+        Theme.add("page") { (view) in
+            view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1.0)
+        }
+        
+        Theme.add("title") { (view) in
+            if let label = view as? UILabel {
+                label.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+                label.textColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1.0)
+            }
+        }
+        
+        Theme.add("body") { (view) in
+            if let label = view as? UILabel {
+                label.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.body)
+                label.textColor = .black
+            }
+        }
+        
+        Theme.add("center") { (view) in
+            if let label = view as? UILabel {
+                label.textAlignment = .center
+            }
+        }
+        
+        Theme.add("truncate") { (view) in
+            if let label = view as? UILabel {
+                label.lineBreakMode = .byTruncatingTail
+            }
+        }
+        
+    }
 
 }
 

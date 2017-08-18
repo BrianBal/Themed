@@ -1,0 +1,6 @@
+framework module Themed {
+  umbrella header "Themed-umbrella.h"
+
+  export *
+  module * { export * }
+}
